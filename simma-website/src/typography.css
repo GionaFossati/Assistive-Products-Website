@@ -1,0 +1,88 @@
+/* Heading 1 */
+
+h1 {
+    font-family: Hind;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 144px;
+    line-height: 231px;
+}
+
+/* Heading 2 */
+
+h2 {
+
+    font-family: Hind;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 154px;
+}
+
+/* Heading 3 */
+
+h3 {
+    font-family: Hind;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 115px;
+}
+
+/* Heading 4 */
+h4 {
+    font-family: Hind;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 102px;
+}
+
+/* Heading 5 */
+h5 {
+
+    font-family: Hind;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 77px;
+}
+
+/* Heading 6 */
+h6 {
+    font-family: Hind;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 58px;
+}
+
+/* Paragraph Big */
+p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+/* Paragraph Small */
+p small {
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+
+}
+
+/* Paragraph Label */
+p label {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
