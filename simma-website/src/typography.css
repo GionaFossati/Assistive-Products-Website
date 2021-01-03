@@ -6,6 +6,8 @@ h1 {
     font-weight: bold;
     font-size: 144px;
     line-height: 231px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
 }
 
 /* Heading 2 */

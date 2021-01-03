@@ -34,7 +34,9 @@ const Hero = (props) => {
   
   return(
     <div className="hero">
-      <h1>Simma</h1>
+      <h1 className="hero__title">Simma</h1>
+      <p> Toronto-based fine artist</p>
+      <Button className="button__primary">My Works</Button>
     </div>
   )
 }
