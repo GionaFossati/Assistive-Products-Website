@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import UsersPage from "./pages/users";
 import WorksPage from "./pages/works";
+import AboutPage from "./pages/about";
 import Index from "./pages/index";
 import './typography.css';
 
