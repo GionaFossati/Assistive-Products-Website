@@ -2,6 +2,7 @@ import React from "react";
 import Logo from '../assets/logo.svg';
 import "./navbar.css"
 import { Separator } from "reakit/Separator";
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 const NavBar = () => (
   <nav aria-label="Simma Fine Art Website" >

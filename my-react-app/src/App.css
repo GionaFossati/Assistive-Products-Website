@@ -1,7 +1,7 @@
 :root {
   --primary: #772ADB;
   --black: #111111;
-  overflow-x: hidden;
+  overflow-x: hidden       !important;
 
 }
 

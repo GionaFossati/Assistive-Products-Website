@@ -2,6 +2,15 @@ import React from "react";
 import "./home.css";
 
 import { Button } from "reakit/Button";
+import {
+  unstable_useFormState as useFormState,
+  unstable_Form as Form,
+  unstable_FormLabel as FormLabel,
+  unstable_FormInput as FormInput,
+  unstable_FormMessage as FormMessage,
+  unstable_FormSubmitButton as FormSubmitButton,
+} from "reakit/Form";
+
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import NavBar from '../components/navbar';
 
@@ -66,6 +75,7 @@ const Services = () => {
       </Grid>
       
       <img src={ServicesImage} alt="" className="services__image"></img>
+      <img src={HomeImage3} alt="" className="services__image2"></img>
     </div>
   )
 }
@@ -103,13 +113,83 @@ const Presentation = () => {
         <img src={HomeImage4} alt=""></img>
         </Col>
         </Row>
-        <Row xs={12} md={12} lg={12}className="presentation__center">
+        <Row xs={12} md={12} lg={12} className="presentation__center">
         <Button id="cta__hero" className="button__primary" alt="Go to Simma's Works" onClick={() => window.location = "/works"}>My Works</Button>
         </Row>
       </Grid>
     </div>
   )
 }
+
+const ContactForm = () => {
+    const form = useFormState({
+      values: { message: "", name: "" },
+      onValidate: (values) => {
+        if (!values.message) {
+          var errors = {
+            message: "Please enter a message.",
+          };
+          throw errors;
+        }
+
+        if (!values.name) {
+          var errors = {
+            name: "How can we be friends without knowing your name?",
+          };
+          throw errors;
+        }
+      },
+
+      onSubmit: (values) => {
+        alert(JSON.stringify(values, null, 2));
+      },
+    });
+    return (
+      <Form {...form} className="contact__form presentation__center">
+        
+        <Row xs={12} md={12} lg={12}>
+          <FormLabel name="name">
+            Name
+          </FormLabel >
+        </Row>
+
+        <Row xs={12} md={12} lg={12}>
+          <FormInput {...form} name="name" placeholder="Grace Kelly" />
+        </Row>
+
+        <Row xs={12} md={12} lg={12}>
+          <FormMessage {...form} name="name" />
+        </Row>
+        
+
+        <Row xs={12} md={12} lg={12}>
+          <FormLabel {...form} name="message">
+            Message
+          </FormLabel>
+        </Row>
+        
+        <Row xs={12} md={12} lg={12}>
+          <FormInput
+            {...form}
+            name="message"
+            placeholder="Type here what would you like to contact me about"
+            as="textarea"
+          />
+        </Row>
+        
+
+        <Row xs={12} md={12} lg={12} >
+          <FormMessage {...form} name="message" />
+        </Row>
+
+        <Row xs={12} md={12} lg={12} >
+          <FormSubmitButton {...form}>Submit</FormSubmitButton>
+        </Row>
+      </Form>
+    );
+  }
+
+
 
 const Contact = () => {
   
@@ -123,15 +203,15 @@ const Contact = () => {
               <p> Please contact me regarding any work you see on the site, custom paintings or to book an appointment to meet with me.</p>
               </Col>
 
-              <Col xs={12} md={12} lg={6} className="presentation__center">
-              <img src={SimmaImage} alt="Potrait of Simma" className="simma__potrait"></img>
-              <p className="presentation__text">I live in Toronto. My paintings have appeared in Hollywood films, won multiple awards, and have been exhibited in a number of galleries across North America, Europe, and Israel.</p>
+              <Col xs={12} md={12} lg={6} className="form__box presentation__center">
+              <ContactForm />
               </Col>
           </Row>
       </Grid>
     </div>
   )
 }
+
 
 function Home() {
   return (
