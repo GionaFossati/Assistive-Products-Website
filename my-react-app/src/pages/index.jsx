@@ -1,34 +1,10 @@
 import React from "react";
 import { Button } from "reakit/Button";
-import { Separator } from "reakit/Separator";
-import Logo from '../assets/logo.svg';
+import NavBar from '../components/navbar';
 import HeroImage from '../assets/hero.png';
 import HeroBackImage from '../assets/heroback.svg';
 import ImgDecoration1 from '../assets/decoration.svg';
 import ServicesImage from '../assets/servicesimage.png';
-
-const NavBar = () => (
-  <nav aria-label="Simma Fine Art Website" >
-    <ul className='navbar'>
-      <li>
-        <a href="" className='navbar__item' className='navbar__logo' aria-label="Simma Logo">
-        <img src={Logo} role="presentation"/>
-        </a>
-        </li>
-        <Separator orientation="vertical" />;
-      <li>
-          <a href="" className='navbar__item navbar_item_active'>Home</a>
-        </li>
-      <li>
-        <a href="" className='navbar__item'>About</a>
-        </li>
-      <li>
-          <a href="" className='navbar__item'>Works</a> 
-        </li>
-    </ul>   
-  </nav>
-);
-
 
 const Hero = () => {
   return(
