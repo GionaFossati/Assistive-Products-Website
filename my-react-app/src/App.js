@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
+import "./pages/home.css";
 import UsersPage from "./pages/users";
 import WorksPage from "./pages/works";
 import AboutPage from "./pages/about";
-import Index from "./pages/index";
+import Home from "./pages/home";
 import './typography.css';
 
 //Import all needed Component for this tutorial
-import MainPage from "./pages"; ///< index.jsx will be automatically imported 
+import MainPage from "./pages/home"; ///< index.jsx will be automatically imported 
 //And render that route with the MainPage component for the root path /
 
 import {
@@ -26,7 +27,7 @@ class App extends Component {
     return (
       <Router>
        {/*All our Routes goes here!*/}
-       <Route exact path="/" component={Index} />
+       <Route exact path="/" component={Home} />
        <Route exact path="/users" component={UsersPage} />
        <Route exact path="/works" component={WorksPage} />
       </Router>
