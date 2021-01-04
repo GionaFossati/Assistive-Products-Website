@@ -18,9 +18,11 @@ import HomeImage4 from '../assets/homeimage4.png';
 const Hero = () => {
   return(
     <div className="hero">
+      
       <h1 className="hero__title">Simma</h1>
       <p className="hero__subtitle"> Toronto-based fine artist</p>
-      <Button id="cta__hero" className="button__primary">My Works</Button>
+      <Button id="cta__hero" className="button__primary" alt="Go to Simma's Works" onClick={() => window.location = "/works"}>My Works</Button>
+      
       <img src={HeroImage} alt="" className="hero__image"></img>
       <img src={HeroBackImage} alt="" className="hero__backimage"></img>
       <img src={ImgDecoration1} alt="" className="hero__decoration"></img>
@@ -76,23 +78,26 @@ const Presentation = () => {
               <p className="presentation__text">I live in Toronto. My paintings have appeared in Hollywood films, won multiple awards, and have been exhibited in a number of galleries across North America, Europe, and Israel.</p>
               </Col>
             </Row>
-        <Row>
-        <Col xs={12} md={6} lg={3}>
-        <img src={HomeImage1} alt="" className=".presentation__center"></img>
+        <Row id="artrow">
+        <Col xs={12} md={6} lg={3} className="presentation__center">
+        <img src={HomeImage1} alt=""></img>
         </Col>
 
-        <Col xs={12} md={6} lg={3}>
-        <img src={HomeImage2} alt="" className=".presentation__center"></img>
+        <Col xs={12} md={6} lg={3} className="presentation__center">
+        <img src={HomeImage2} alt="" ></img>
         </Col>
 
-        <Col xs={12} md={6} lg={3}>
-        <img src={HomeImage3} alt="" className=".presentation__center"></img>
+        <Col xs={12} md={6} lg={3} className="presentation__center">
+        <img src={HomeImage3} alt=""></img>
         </Col>
 
-        <Col xs={12} md={6} lg={3}>
-        <div id="image4" alt=""></div>
-        {/* <img src={HomeImage4} alt="" className=".presentation__center"></img> */}
+        <Col xs={12} md={6} lg={3} className="presentation__center">
+        {/* <div id="image4" alt=""></div> */}
+        <img src={HomeImage4} alt=""></img>
         </Col>
+        </Row>
+        <Row xs={12} md={12} lg={12}className="presentation__center">
+        <Button id="cta__hero" className="button__primary" alt="Go to Simma's Works" onClick={() => window.location = "/works"}>My Works</Button>
         </Row>
       </Grid>
     </div>

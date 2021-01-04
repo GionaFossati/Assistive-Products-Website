@@ -17,8 +17,25 @@
 
 .hero__subtitle {
   font-weight: bold;
-  /* font-size: 48px; */
+  --submin: 23px;
+  --submax: 44px;
+  font-family: "Hind";
+  font-style: normal;
   line-height: 77px;
+  
+}
+/* Give to subtitle a fluid typohraphy */
+
+@media screen and (min-width: 320px) {
+  .hero__subtitle  {
+      font-size: calc(var(--submin) + 6 * ((100vw - 320px) / 680));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hero__subtitle  {
+      font-size: var(--submax);
+  }
 }
 
 .hero__image {
@@ -67,12 +84,10 @@ li{
 }
 
 
-.services__title {
-  /* font-size: 64px; */
-}
-
-
 /* 
+.services__title {
+   font-size: 64px; 
+}
 
 li h3 {
   font-size: 36px;
@@ -117,9 +132,8 @@ li p{
   margin-top: 2%;
 }
 
-#image4 {
-  background-image: url("../assets/homeimage4.png");
-  background-color: #cccccc;
+#artrow {
+  margin-top: 4%;
 }
 
 /******* Media Query for responsivness ********/

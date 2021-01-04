@@ -13,7 +13,7 @@ const NavBar = () => (
         </li>
         <Separator orientation="vertical" />;
       <li>
-          <a href="/home" className='navbar__item navbar_item_active'>Home</a>
+          <a href="/" className='navbar__item navbar_item_active'>Home</a>
         </li>
       <li>
         <a href="/about" className='navbar__item'>About</a>
