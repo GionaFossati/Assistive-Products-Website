@@ -1,12 +1,4 @@
 import React from "react";
-<<<<<<< Updated upstream
-import NavBar from '../components/navbar';
-
-/* We simply can use an array and loop and print each user */
-const AboutPage = () => {
-  return (
-    <NavBar />
-=======
 import { Grid, Row, Col } from 'react-flexbox-grid';
 /* We simply can use an array and loop and print each user */
 const AboutPage = () => {
@@ -29,7 +21,6 @@ const AboutPage = () => {
     </Grid>
   </div>
 
->>>>>>> Stashed changes
   );
 };
 
