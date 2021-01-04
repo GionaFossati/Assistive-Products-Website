@@ -18,15 +18,20 @@ import HomeImage4 from '../assets/homeimage4.png';
 const Hero = () => {
   return(
     <div className="hero">
-      
-      <h1 className="hero__title">Simma</h1>
-      <p className="hero__subtitle"> Toronto-based fine artist</p>
-      <Button id="cta__hero" className="button__primary" alt="Go to Simma's Works" onClick={() => window.location = "/works"}>My Works</Button>
-      
-      <img src={HeroImage} alt="" className="hero__image"></img>
-      <img src={HeroBackImage} alt="" className="hero__backimage"></img>
-      <img src={ImgDecoration1} alt="" className="hero__decoration"></img>
-
+      <Grid fluid>
+        <Row>
+              <Col xs={12} md={12} lg={6}>
+                <h1 className="hero__title">Simma</h1>
+                <p className="subtitle"> Toronto-based fine artist</p>
+                <Button id="cta__hero" className="button__primary" alt="Go to Simma's Works" onClick={() => window.location = "/works"}>My Works</Button>
+              </Col>
+              <Col xs={0} md={6} lg={6}>
+                <img src={HeroImage} alt="" className="hero__image"></img>
+                <img src={HeroBackImage} alt="" className="hero__backimage"></img>
+                <img src={ImgDecoration1} alt="" className="hero__decoration"></img>
+              </Col>
+            </Row>
+      </Grid>
     </div>
   )
 }
@@ -45,12 +50,14 @@ const Services = () => {
         <Row>
             <Col xs={12} md={12} lg={12} >
                 <ul className='services__list'>
+                 
                   <li className="services__item">
-                    <h3>Paintings</h3>
+                    <p className="subtitle">Paintings</p>
                     <p> I let my creativity flow to produce fine art paintings.</p>
                   </li>
-                  <li>
-                    <h3>Personalized Gifts</h3>
+                 
+                  <li className="services__item">
+                    <p className="subtitle">Personalized Gifts</p>
                     <p> I can provide you with unique high quality gifts for every occasion.</p>
                   </li>
                 </ul>
@@ -104,15 +111,38 @@ const Presentation = () => {
   )
 }
 
+const Contact = () => {
+  
+  
+  return(
+    <div className="contact">
+      <Grid fluid>
+        <Row>
+              <Col xs={12} md={12} lg={6} className="contact__text">
+              <h4>Contact Me</h4>
+              <p> Please contact me regarding any work you see on the site, custom paintings or to book an appointment to meet with me.</p>
+              </Col>
+
+              <Col xs={12} md={12} lg={6} className="presentation__center">
+              <img src={SimmaImage} alt="Potrait of Simma" className="simma__potrait"></img>
+              <p className="presentation__text">I live in Toronto. My paintings have appeared in Hollywood films, won multiple awards, and have been exhibited in a number of galleries across North America, Europe, and Israel.</p>
+              </Col>
+          </Row>
+      </Grid>
+    </div>
+  )
+}
+
 function Home() {
   return (
-    <div className="root"> 
+    <div> 
       <NavBar />
       <div role="main">
-      <Hero />  
-      <Services />
-      <Presentation />
-      </div>
+          <Hero />  
+          <Services />
+          <Presentation />
+          <Contact />
+        </div>
       </div>
     
   )
