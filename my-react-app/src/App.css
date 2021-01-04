@@ -2,39 +2,82 @@
   --primary: #772ADB;
   --black: #111111;
   overflow-x: hidden;
+
 }
 
-.App {
+.body {
   font-family: 'Hind', sans-serif;
   font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   text-decoration: none;
 }
 
-.button__primary {
+/* .button__primary {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0px 16px;
 
-  width: 178px;
-  height: 65px;
+  width: 7em;
+  height: 3em;
   cursor: pointer;
-
-  /* Primary */
 
   background: #772ADB;
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.3em;
   line-height: 18px;
   color: white;
-  /* button dropshadow */
 
   box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.13);
   border-radius: 4px;
+} */
+
+.button__primary {
+
+  box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.13);
+
+  display: inline-block;
+  padding: 1.46em 2em;
+  border: 0.1em solid var(--primary);
+  margin: 0 0.2em 0.2em 0;
+  border-radius: 0.22em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: large;
+  color: var(--primary);
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: #FFFFFF;
+  text-align: center;
+  transition: all 0.15s;
+}
+
+.button__primary:hover {
+  text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+  color: #FFFFFF;
+  color: white;
+  background-color: var(--primary);
+}
+
+@media all and (max-width:400px) {
+  .button__primary {
+    display: block;
+    margin: 0.4em auto;
+    padding: 1.2em 3em;
+    font-size: 2em;
+    background-color: white;
+    color: var(--primary);
+    border: 0.09em solid var(--primary);
+    border-radius: 0.3em;
+    box-shadow: 2px 4px 3px 3px rgba(0, 0, 0, 0.23);
+
+  }
 }

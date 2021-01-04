@@ -7,8 +7,8 @@ const NavBar = () => (
   <nav aria-label="Simma Fine Art Website" >
     <ul className='navbar'>
       <li>
-        <a href="/" className='navbar__item' className='navbar__logo' aria-label="Simma Logo">
-        <img src={Logo} role="presentation"/>
+        <a href="/" className='navbar__item navbar__logo' aria-label="Simma Logo">
+        <img src={Logo} alt=""/>
         </a>
         </li>
         <Separator orientation="vertical" />;

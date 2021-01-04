@@ -1,17 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 /******* HERO ********/
 
 .hero {
@@ -23,14 +9,16 @@ code {
   top: 10%;
 }
 
-.hero__subtitle {
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 77px;
-}
-
 .hero__title {
   color: var(--primary);
+  /* ∏font-size: 7em; */
+  margin-block-end: -0.6em;
+}
+
+.hero__subtitle {
+  font-weight: bold;
+  /* font-size: 48px; */
+  line-height: 77px;
 }
 
 .hero__image {
@@ -52,12 +40,16 @@ code {
 }
 
 .hero__decoration {
-  position: relative;
-  width: 30vh;
-  height: 30vh;
-  left: -10vw;
-  top: 10vh;
-  z-index: -2;
+  position: absolute;
+    width: 30vh;
+    height: 30vh;
+    left: -16vw;
+    top: 70vh;
+    z-index: -2;
+}
+
+#cta__hero {
+  margin-top: 4em;
 }
 
 /******* SERVICES ********/
@@ -69,14 +61,18 @@ code {
   top: 10%;
 }
 
-.services__title {
-  font-size: 64px;
-}
-
 
 li{
   list-style: none;
 }
+
+
+.services__title {
+  /* font-size: 64px; */
+}
+
+
+/* 
 
 li h3 {
   font-size: 36px;
@@ -85,7 +81,9 @@ li h3 {
 li p{
   font-size: 24px;
 
-}
+} */
+
+
 .services__list {
   box-shadow: -3px 10px 8px 9px rgba(0, 0, 0, 0.06);
   margin-left: -30px;
@@ -104,4 +102,39 @@ li p{
   z-index: -2;
   border-radius: 100px 0 0 0px;
 
+}
+
+/******* PRESENTATION ********/
+
+.presentation__center {
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.presentation__text {
+  padding: 0 20% 0 20%;
+  margin-top: 2%;
+}
+
+#image4 {
+  background-image: url("../assets/homeimage4.png");
+  background-color: #cccccc;
+}
+
+/******* Media Query for responsivness ********/
+
+
+@media all and (max-width:400px) {
+  .hero__image{
+    visibility: hidden;
+  }
+
+  .hero__backimage {
+    visibility: hidden;
+  }
+
+  .services__image {
+    visibility: hidden;
+  }
 }

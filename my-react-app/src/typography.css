@@ -1,6 +1,25 @@
+
 /* Heading 1 */
 
 h1 {
+    --h1min: 100px;
+    --h1max: 78px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: bold;
+  }
+  @media screen and (min-width: 320px) {
+    h1 {
+      font-size: calc(var(--h1min) + 6 * ((100vw - 320px) / 680));
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    h1 {
+      font-size: var(--h1max);
+    }
+  } 
+
+/* h1 {
     font-family: Hind;
     font-style: normal;
     font-weight: bold;
@@ -8,9 +27,28 @@ h1 {
     line-height: 231px;
     margin-block-start: 1em;
     margin-block-end: 0em;
-}
+} */
 
 /* Heading 2 */
+
+h2 {
+    --h2min: 48px;
+    --h2max: 62px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: bold;
+  }
+  @media screen and (min-width: 320px) {
+    h2 {
+      font-size: calc(var(--h2min) + 6 * ((100vw - 320px) / 680));
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    h2 {
+      font-size: var(--h2max);
+    }
+  } 
+/* 
 
 h2 {
 
@@ -21,10 +59,27 @@ h2 {
     line-height: 154px;
     margin-block-start: 1em;
     margin-block-end: 0em;
-}
+} */
 
 /* Heading 3 */
-
+h3 {
+    --h3min: 30px;
+    --h3max: 52px;
+    font-family: "Hind";
+    font-style: normal;
+    font-weight: bold;
+  }
+  @media screen and (min-width: 320px) {
+    h3 {
+      font-size: calc(var(--h3min) + 6 * ((100vw - 320px) / 680));
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    h3 {
+      font-size: var(--h3max);
+    }
+  } 
+  /* 
 h3 {
     font-family: Hind;
     font-style: normal;
@@ -33,7 +88,7 @@ h3 {
     line-height: 115px;
     margin-block-start: 1em;
     margin-block-end: 0em;
-}
+} */
 
 /* Heading 4 */
 h4 {
@@ -70,7 +125,7 @@ h6 {
 }
 
 /* Paragraph Big */
-p {
+/* p {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -78,7 +133,28 @@ p {
     line-height: 33px;
     margin-block-start: 0;
     margin-block-end: 0em;
-}
+} */
+
+/******* Fluid Typography ********/
+
+p {
+    --pmin: 16px;
+    --pmax: 24px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+  }
+  @media screen and (min-width: 320px) {
+    p {
+      font-size: calc(var(--pmin) + 6 * ((100vw - 320px) / 680));
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    p {
+      font-size: var(--pmax);
+    }
+  } 
+
 
 /* Paragraph Small */
 p small {
