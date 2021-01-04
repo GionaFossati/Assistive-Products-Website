@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import UsersPage from "./pages/users";
+import WorksPage from "./pages/works";
 import Index from "./pages/index";
 import './typography.css';
 
@@ -26,6 +27,7 @@ class App extends Component {
        {/*All our Routes goes here!*/}
        <Route exact path="/" component={Index} />
        <Route exact path="/users" component={UsersPage} />
+       <Route exact path="/works" component={WorksPage} />
       </Router>
     );
   }
