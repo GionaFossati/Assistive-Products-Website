@@ -1,15 +1,13 @@
 import React from "react";
+import NavBar from '../components/navbar';
 /* We simply can use an array and loop and print each user */
+
+
 const WorksPage = () => {
   return (
-    <div>
-      <ul>
-        {["Alex", "John", "Jaz", "fedrik", "missali","works"].map((user, idx) => {
-          return <li key={idx}>{user}</li>;
-        })}
-      </ul>
-    </div>
-  );
+    <NavBar />
+  )
 };
+
 
 export default WorksPage;

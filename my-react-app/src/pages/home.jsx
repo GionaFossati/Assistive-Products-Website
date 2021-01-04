@@ -1,4 +1,5 @@
 import React from "react";
+import "./home.css";
 import { Button } from "reakit/Button";
 import NavBar from '../components/navbar';
 import HeroImage from '../assets/hero.png';
@@ -41,7 +42,7 @@ const Services = () => {
   )
 }
 
-function Index() {
+function Home() {
   return (
     <div className="root"> 
       <NavBar />
@@ -54,4 +55,4 @@ function Index() {
   )
   }
 
-export default Index;
+export default Home;

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-import "./pages/home.css";
 import UsersPage from "./pages/users";
 import WorksPage from "./pages/works";
 import AboutPage from "./pages/about";
@@ -30,6 +29,7 @@ class App extends Component {
        <Route exact path="/" component={Home} />
        <Route exact path="/users" component={UsersPage} />
        <Route exact path="/works" component={WorksPage} />
+       <Route exact path="/about" component={AboutPage} />
       </Router>
     );
   }
