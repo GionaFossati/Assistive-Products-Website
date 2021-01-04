@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
 import UsersPage from "./pages/users";
+import Index from "./pages/index";
+import './typography.css';
 
 //Import all needed Component for this tutorial
 import MainPage from "./pages"; ///< index.jsx will be automatically imported 
@@ -22,7 +24,7 @@ class App extends Component {
     return (
       <Router>
        {/*All our Routes goes here!*/}
-       <Route exact path="/" component={MainPage} />
+       <Route exact path="/" component={Index} />
        <Route exact path="/users" component={UsersPage} />
       </Router>
     );
