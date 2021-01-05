@@ -44,7 +44,7 @@
   width: 70vh;
   height: 70vh;
   left: 55vw;
-  top: -5vh;
+  top: 5vh;
   z-index: -1;
 }
 
@@ -53,7 +53,7 @@
   width: 70vh;
   height: 70vh;
   left: 53vw;
-  top: -2vh;
+  top: 7vh;
   z-index: -2;
 }
 
@@ -136,6 +136,10 @@ li{
   margin-top: 4%;
 }
 
+#cta__presentation {
+  margin-top: 2em;
+}
+
 /****** CONTACT FORM *******/
 
 .contact { 
@@ -145,12 +149,17 @@ li{
   height: 100vh;
 }
 
-.contact__text {
+.contact__textbox {
   color: white;
   background-color: var(--primary);
   margin-left: -1%;    
-  padding: 0% 6%                   !important;
+  padding: 2% 6%                   !important;
+  border-radius: 30px;
   /* !important added in order to overrule the react-flexbox-grid imposed padding  */
+}
+
+.contact__text {
+  margin-block-end: 50px;
 }
 
 .contact__form {
@@ -172,7 +181,7 @@ li{
 /******* Media Query for responsivness ********/
 
 
-@media all and (max-width:400px) {
+@media all and (max-width:600px) {
   .hero__image{
     visibility: hidden;
   }
@@ -180,8 +189,39 @@ li{
   .hero__backimage {
     visibility: hidden;
   }
+  .hero__backimage {
+    visibility: hidden;
+  }
 
   .services__image {
     visibility: hidden;
   }
+  
+  .services__image2 {
+    visibility: hidden;
+  }
+
+  .contact__textbox {
+    padding: 6% 6%                   !important;
+  }
+
+  .services {
+    position: relative;
+    width: 80vw;
+    height: 100vh;
+   
+  }
+  
+  body {
+    overflow-y: hidden;
+  }
+  
+  .services__list {
+    box-shadow: -3px 10px 8px 9px rgba(0, 0, 0, 0.06);
+    padding: 10% 10%;
+    padding-bottom: 70px;
+    padding-top: 2px;
+    border-radius: 20px;
+  }
+  
 }

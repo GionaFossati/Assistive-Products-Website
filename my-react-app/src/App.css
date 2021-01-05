@@ -53,13 +53,13 @@ a {
   .button__primary {
     display: block;
     margin: 0.4em auto;
-    padding: 1.2em 3em;
-    font-size: 2em;
+    padding: 1em 2em;
+    font-size: 1.4em;
     background-color: white;
     color: var(--primary);
     border: 0.09em solid var(--primary);
     border-radius: 0.3em;
-    box-shadow: 2px 4px 3px 3px rgba(0, 0, 0, 0.23);
+    box-shadow: 2px 4px 3px 3px rgba(0, 0, 0, 0.10);
 
   }
 }

@@ -114,7 +114,7 @@ const Presentation = () => {
         </Col>
         </Row>
         <Row xs={12} md={12} lg={12} className="presentation__center">
-        <Button id="cta__hero" className="button__primary" alt="Go to Simma's Works" onClick={() => window.location = "/works"}>My Works</Button>
+        <Button id="cta__presentation" className="button__primary" alt="Go to Simma's Works" onClick={() => window.location = "/works"}>My Works</Button>
         </Row>
       </Grid>
     </div>
@@ -133,7 +133,7 @@ const ContactForm = () => {
         }
 
         if (!values.name) {
-          var errors = {
+          errors = {
             name: "How can we be friends without knowing your name?",
           };
           throw errors;
@@ -154,11 +154,25 @@ const ContactForm = () => {
         </Row>
 
         <Row xs={12} md={12} lg={12}>
-          <FormInput {...form} name="name" placeholder="Grace Kelly" />
+          <FormInput {...form} name="name" placeholder="Type your name" />
         </Row>
 
         <Row xs={12} md={12} lg={12}>
           <FormMessage {...form} name="name" />
+        </Row>
+        
+        <Row xs={12} md={12} lg={12}>
+          <FormLabel name="email">
+            Email
+          </FormLabel >
+        </Row>
+
+        <Row xs={12} md={12} lg={12}>
+          <FormInput {...form} name="email" placeholder="Type your email" type="email" />
+        </Row>
+
+        <Row xs={12} md={12} lg={12}>
+          <FormMessage {...form} name="email" />
         </Row>
         
 
@@ -198,9 +212,9 @@ const Contact = () => {
     <div className="contact">
       <Grid fluid>
         <Row>
-              <Col xs={12} md={12} lg={6} className="contact__text">
+              <Col xs={12} md={12} lg={6} className="contact__textbox">
               <h4>Contact Me</h4>
-              <p> Please contact me regarding any work you see on the site, custom paintings or to book an appointment to meet with me.</p>
+              <p id="contact__text"> Please contact me regarding any work you see on the site, custom paintings or to book an appointment to meet with me.</p>
               </Col>
 
               <Col xs={12} md={12} lg={6} className="form__box presentation__center">
