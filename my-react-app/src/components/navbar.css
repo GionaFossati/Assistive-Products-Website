@@ -1,44 +1,60 @@
+/******* SKIP TO MAIN LINK ********/
+
+.skip-to-content-link {
+  font-family: "Hind", sans-serif;
+  background: white;
+  height: 30px;
+  left: 15%;
+  padding: 8px;
+  position: absolute;
+  border: solid var(--primary) 3px;
+  border-radius: 6px;
+  transform: translateY(-200%);
+  transition: transform 0.3s;
+}
+
+.skip-to-content-link:focus {
+  transform: translateY(0%);
+}
+
 
 /******* NAVBAR ********/
 
+
 .navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: white;
-    color: white;
-    font-family: Hind;
-    list-style: none;
-    z-index: 1;
-    /* -webkit-box-shadow: -5px 13px 15px -4px rgba(0, 0, 0, 0.06);
-    -moz-box-shadow: -5px 13px 15px -4px rgba(0, 0, 0, 0.06);
-    box-shadow: -5px 13px 15px -4px rgba(0, 0, 0, 0.06); */
-  
-  }
-  
-  .navbar__logo {
-    /* margin-right: 50vw; */
-    font-size: 150%;
-    padding: 12px 16px;
-  }
-  
-  
-  .navbar__item {
-    position: relative;
-    margin: 0px 15px 0px 15px;
-    padding: 16px 16px;
-    cursor: pointer;
-    vertical-align: right;
-  }
-  
-  .navbar_item_active {
-    font-weight: 600;
-    color: var(--primary);
-    text-decoration: underline;
-  }
-  
-  .navbar__item:hover {
-    font-weight: 600;
-    text-decoration: underline;
-    color: var(--primary);
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+  color: white;
+  font-family: Hind;
+  list-style: none;
+  z-index: 1;
+}
+
+.navbar__logo {
+  /* margin-right: 50vw; */
+  font-size: 150%;
+  padding: 12px 16px;
+}
+
+
+.navbar__item {
+  position: relative;
+  margin: 0px 15px 0px 15px;
+  padding: 16px 16px;
+  cursor: pointer;
+  vertical-align: right;
+}
+
+.navbar_item_active {
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.navbar__item:hover {
+  font-weight: 600;
+  text-decoration: underline;
+  color: var(--primary);
+}

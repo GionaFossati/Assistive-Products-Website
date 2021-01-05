@@ -13,6 +13,7 @@ import {
 
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import NavBar from '../components/navbar';
+import Footer from '../components/footer';
 
 import HeroImage from '../assets/hero.png';
 import HeroBackImage from '../assets/heroback.svg';
@@ -209,7 +210,7 @@ const Contact = () => {
   
   
   return(
-    <div className="contact">
+    <div className="contact" id="contact">
       <Grid fluid>
         <Row>
               <Col xs={12} md={12} lg={6} className="contact__textbox">
@@ -231,12 +232,13 @@ function Home() {
   return (
     <div> 
       <NavBar />
-      <div role="main">
+      <main id="main">
           <Hero />  
           <Services />
           <Presentation />
           <Contact />
-        </div>
+        </main>
+      <Footer />
       </div>
     
   )
