@@ -56,16 +56,14 @@ function ProductGrid() {
     return (
       <ReakitGrid {...grid} aria-label="Art cost">
         <GridRow {...grid}>
-          <GridCell {...grid}></GridCell>
-          <GridCell {...grid}>Black & White</GridCell>
-          <GridCell {...grid}>Black & White + Frame</GridCell>
-          <GridCell {...grid}>Coloured</GridCell>
-          <GridCell {...grid}>Coloured + Frame</GridCell>
+          <GridCell {...grid}>cell</GridCell>
+          <GridCell {...grid}>cell</GridCell>
+          <GridCell {...grid}>cell</GridCell>
         </GridRow>
         <GridRow {...grid}>
-          <GridCell {...grid}>30x40cm</GridCell>
-          <GridCell {...grid}>70x120cm</GridCell>
-          <GridCell {...grid}>100x180cm</GridCell>
+          <GridCell {...grid}>cell</GridCell>
+          <GridCell {...grid}>cell</GridCell>
+          <GridCell {...grid}>cell</GridCell>
         </GridRow>
         <GridRow {...grid}>
           <GridCell {...grid}>cell</GridCell>
