@@ -6,8 +6,8 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 
 const NavBar = () => (
   <header>
-    <a class="skip-to-content-link shadow" href='#main'>Skip to content</a>
-    <nav aria-label="Simma Fine Art Website" className="shadow__low">
+    <a class="skip-to-content-link shadow__low" href='#main'>Skip to content</a>
+    <nav aria-label="Simma Fine Art Website" /* className="shadow__low" */>
       <ul className='navbar'>
         <li>
           <a href="/" className='navbar__item navbar__logo' aria-label="Simma Logo">

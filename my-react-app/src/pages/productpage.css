@@ -54,7 +54,7 @@
 
 .product__image {
   width: 70vh;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 .product__requesttext {
@@ -81,8 +81,8 @@
   border-radius: 13px;
   border-collapse: collapse;
   margin: auto;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   animation: float 5s infinite;
 }
  

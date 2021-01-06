@@ -26,7 +26,7 @@ const Hero = () => {
               <Col xs={12} md={12} lg={6}>
                 <h1 className="hero__title">Simma</h1>
                 <p className="subtitle"> Toronto-based fine artist</p>
-                <Button id="cta__hero" className="button__primary" alt="Go to Simma's Works" onClick={() => window.location = "/works"}>My Works</Button>
+                <Button id="cta__hero" className="button__primary" alt="Go to Simma's Works" onClick={() => window.location = "/product"}>My Works</Button>
               </Col>
               <Col xs={0} md={6} lg={6}>
                 <img src={HeroImage} alt="" className="hero__image"></img>

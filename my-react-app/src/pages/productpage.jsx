@@ -15,7 +15,7 @@ return(
     <Grid fluid>
         <Row>
             <Col xs={0} md={6} lg={6}>
-            <img src={HeroImage} alt="" className="product__image presentation__center"></img>
+            <img src={HeroImage} alt="" className="product__image presentation__center shadow__low"></img>
             </Col>
             <Col xs={12} md={12} lg={6}>
             <h1 className="product__title">Jerusalem</h1>
