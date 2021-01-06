@@ -24,7 +24,7 @@ const Footer = () => (
     <Grid fluid className="presentation__center">
     <nav aria-label="Simma Fine Art Website" >
       <ul className='footer__list'>
-      <Row>
+      <Row id="footer__nav">
         <Col xs={12} md={3} lg={3}>
           <li>
             <a href="/" className='footer__item footer__logo' aria-label="Simma Logo">

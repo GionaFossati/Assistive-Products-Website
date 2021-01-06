@@ -1,0 +1,70 @@
+/******* HERO ********/
+
+.product {
+  position: relative;
+  left: 10%;
+  top: 10%;
+  justify-content: center;
+}
+
+.product__title {
+  font-weight: bold;
+  --submin: 32px;
+  --submax: 48px;
+  font-family: "Hind";
+  font-style: normal;
+  line-height: 77px;
+  padding-top: 3%;
+  margin-block-end: -0.6em;
+}
+/* Give to title a fluid typohraphy */
+
+@media screen and (min-width: 320px) {
+  .product__title  {
+      font-size: calc(var(--submin) + 6 * ((100vw - 320px) / 680));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .product__title  {
+      font-size: var(--submax);
+  }
+}
+
+.product__herodescription {
+  margin-top: 5%;
+}
+
+.product__descriptiontitle {
+  font-weight: bold;
+  font-size: 16px;
+  margin-block-end: 0;
+  margin-block-start: 10%;
+}
+
+.product__description {
+  max-width: 70%;
+  max-height: 70%;
+  word-wrap: break-word;
+}
+
+#description {
+  font-size: 16px;
+}
+
+.product__image {
+  width: 70vh;
+  height: 70vh;
+}
+
+.product__requesttext {
+  color: var(--primary);
+  font-size: 14px;
+}
+
+#product__measure {
+  color: gray;
+  font-size: 14px;
+}
+
+

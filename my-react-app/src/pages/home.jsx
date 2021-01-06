@@ -2,18 +2,11 @@ import React from "react";
 import "./home.css";
 
 import { Button } from "reakit/Button";
-import {
-  unstable_useFormState as useFormState,
-  unstable_Form as Form,
-  unstable_FormLabel as FormLabel,
-  unstable_FormInput as FormInput,
-  unstable_FormMessage as FormMessage,
-  unstable_FormSubmitButton as FormSubmitButton,
-} from "reakit/Form";
 
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import NavBar from '../components/navbar';
 import Footer from '../components/footer';
+import ContactForm from '../components/contactform';
 
 import HeroImage from '../assets/hero.png';
 import HeroBackImage from '../assets/heroback.svg';
@@ -37,7 +30,7 @@ const Hero = () => {
               </Col>
               <Col xs={0} md={6} lg={6}>
                 <img src={HeroImage} alt="" className="hero__image"></img>
-                <img src={HeroBackImage} alt="" className="hero__backimage"></img>
+                <img src={HeroBackImage} alt="" className="hero__backimage shadow__up"></img>
                 <img src={ImgDecoration1} alt="" className="hero__decoration"></img>
               </Col>
             </Row>
@@ -59,7 +52,7 @@ const Services = () => {
         </Row>
         <Row>
             <Col xs={12} md={12} lg={12} >
-                <ul className='services__list'>
+                <ul className='services__list shadow__up'>
                  
                   <li className="services__item">
                     <p className="subtitle">Paintings</p>
@@ -122,95 +115,12 @@ const Presentation = () => {
   )
 }
 
-const ContactForm = () => {
-    const form = useFormState({
-      values: { message: "", name: "" },
-      onValidate: (values) => {
-        if (!values.message) {
-          var errors = {
-            message: "Please enter a message.",
-          };
-          throw errors;
-        }
-
-        if (!values.name) {
-          errors = {
-            name: "How can we be friends without knowing your name?",
-          };
-          throw errors;
-        }
-      },
-
-      onSubmit: (values) => {
-        alert(JSON.stringify(values, null, 2));
-      },
-    });
-    return (
-      <Form {...form} className="contact__form presentation__center">
-        
-        <Row xs={12} md={12} lg={12}>
-          <FormLabel name="name">
-            Name
-          </FormLabel >
-        </Row>
-
-        <Row xs={12} md={12} lg={12}>
-          <FormInput {...form} name="name" placeholder="Type your name" />
-        </Row>
-
-        <Row xs={12} md={12} lg={12}>
-          <FormMessage {...form} name="name" />
-        </Row>
-        
-        <Row xs={12} md={12} lg={12}>
-          <FormLabel name="email">
-            Email
-          </FormLabel >
-        </Row>
-
-        <Row xs={12} md={12} lg={12}>
-          <FormInput {...form} name="email" placeholder="Type your email" type="email" />
-        </Row>
-
-        <Row xs={12} md={12} lg={12}>
-          <FormMessage {...form} name="email" />
-        </Row>
-        
-
-        <Row xs={12} md={12} lg={12}>
-          <FormLabel {...form} name="message">
-            Message
-          </FormLabel>
-        </Row>
-        
-        <Row xs={12} md={12} lg={12}>
-          <FormInput
-            {...form}
-            name="message"
-            placeholder="Type here what would you like to contact me about"
-            as="textarea"
-          />
-        </Row>
-        
-
-        <Row xs={12} md={12} lg={12} >
-          <FormMessage {...form} name="message" />
-        </Row>
-
-        <Row xs={12} md={12} lg={12} >
-          <FormSubmitButton {...form}>Submit</FormSubmitButton>
-        </Row>
-      </Form>
-    );
-  }
-
-
 
 const Contact = () => {
   
   
   return(
-    <div className="contact" id="contact">
+    <div className="contact shadow__low" id="contact">
       <Grid fluid>
         <Row>
               <Col xs={12} md={12} lg={6} className="contact__textbox">

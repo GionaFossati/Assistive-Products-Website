@@ -3,6 +3,7 @@ import "./App.css";
 
 import UsersPage from "./pages/users";
 import WorksPage from "./pages/works";
+import ProductPage from "./pages/productpage";
 import AboutPage from "./pages/about";
 import Home from "./pages/home";
 import './typography.css';
@@ -31,6 +32,7 @@ class App extends Component {
        <Route exact path="/users" component={UsersPage} />
        <Route exact path="/works" component={WorksPage} />
        <Route exact path="/about" component={AboutPage} />
+       <Route exact path="/product" component={ProductPage} />
       </Router>
     );
   }
