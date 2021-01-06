@@ -122,21 +122,6 @@ li{
 
 /******* PRESENTATION ********/
 
-.presentation__center {
-  margin: auto;
-  justify-content: center;
-  text-align: center;
-}
-
-.presentation__verticalcenter {
-  display: flex;
-  align-items: center;
-}
-.presentation__fulldisplay {
-  width: 100vw;
-  height: 100vh;
-}
-
 .presentation__text {
   padding: 0 20% 0 20%;
   margin-top: 2%;

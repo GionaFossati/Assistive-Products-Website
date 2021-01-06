@@ -58,3 +58,10 @@
   text-decoration: underline;
   color: var(--primary);
 }
+
+/******* Media Query for responsivness ********/
+
+
+@media all and (max-width:450px) {
+
+}

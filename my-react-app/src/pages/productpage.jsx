@@ -2,12 +2,6 @@ import React from "react";
 import "./productpage.css";
 
 import { Button } from "reakit/Button";
-import {
-    unstable_useGridState as useGridState,
-    unstable_Grid as ReakitGrid,
-    unstable_GridRow as GridRow,
-    unstable_GridCell as GridCell,
-  } from "reakit/Grid";
 
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import NavBar from '../components/navbar';
@@ -51,26 +45,48 @@ return(
 )
 }
 
-function ProductGrid() {
-    const grid = useGridState();
+function ProductTable() {
     return (
-      <ReakitGrid {...grid} aria-label="Art cost">
-        <GridRow {...grid}>
-          <GridCell {...grid}>cell</GridCell>
-          <GridCell {...grid}>cell</GridCell>
-          <GridCell {...grid}>cell</GridCell>
-        </GridRow>
-        <GridRow {...grid}>
-          <GridCell {...grid}>cell</GridCell>
-          <GridCell {...grid}>cell</GridCell>
-          <GridCell {...grid}>cell</GridCell>
-        </GridRow>
-        <GridRow {...grid}>
-          <GridCell {...grid}>cell</GridCell>
-          <GridCell {...grid}>cell</GridCell>
-          <GridCell {...grid}>cell</GridCell>
-        </GridRow>
-      </ReakitGrid>
+        <div>
+            <Grid fluid>
+                <Row>
+                    <Col xs={12} md={12} lg={12}>
+                        <table className="tablefill shadow__low">
+                            <caption>Product Cost:</caption>
+                            <tr>
+                                <td></td>
+                                <th scope="col" id="bw">Black & White</th>
+                                <th scope="col" id="bw__frame">Black & White + Frame</th>
+                                <th scope="col" id="coloured">Coloured</th>
+                                <th scope="col" id="coloured__frame">Coloured + Frame</th>
+                            </tr>
+                            <tr>
+                                <th scope="row" id="70x100cm">70x100cm</th>
+                                <td headers="70x100cm bw">30€</td>
+                                <td headers="70x100cm bw__frame">30€</td>
+                                <td headers="70x100cm coloured">30€</td>
+                                <td headers="70x100cm coloured__frame">30€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">80x120cm</th>
+                                <td>30€</td>
+                                <td>30€</td>
+                                <td>30€</td>
+                                <td>30€</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">80x120cm</th>
+                                <td>30€</td>
+                                <td>30€</td>
+                                <td>30€</td>
+                                <td>30€</td>
+                            </tr>
+                        </table>
+                    </Col>
+                </Row>
+          </Grid>
+          
+        </div>
     );
   }
 
@@ -81,7 +97,7 @@ return (
     <NavBar />
     <main id="main">
         <Product />
-        <ProductGrid />
+        <ProductTable />
     </main>
     <Footer />
 </div>

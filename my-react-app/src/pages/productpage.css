@@ -54,6 +54,7 @@
 
 .product__image {
   width: 70vh;
+  border-radius: 15px;
 }
 
 .product__requesttext {
@@ -64,6 +65,92 @@
 #product__measure {
   color: gray;
   font-size: 14px;
+}
+
+/*** Table Styles **/
+
+:root {
+  --headersbordercolour : #7d07c2;
+  --rowsbordercolour : #8a00da;
+  --cellsbordercolour : #f3deff;
+
+}
+
+.tablefill {
+  background: transparent;
+  border-radius: 13px;
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  animation: float 5s infinite;
+}
+ 
+th {
+  color:#FFFFFF;;
+  background: var(--primary);
+  border-bottom: 2px solid var(--headersbordercolour);
+  border-right: 2px solid var(--headersbordercolour);
+  padding: 1.7%;
+  text-align: center;
+  vertical-align:middle;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-bottom:2px solid var(--headersbordercolour);
+}
+ 
+tr:hover td {
+  background:var(--primary);
+  color:#FFFFFF;
+  font-weight: bold;
+}
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#fcf6ff;
+}
+ 
+tr:nth-child(odd):hover td {
+  background:var(--primary);
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:center;
+  vertical-align:middle;
+  border-bottom:2px solid var(--cellsbordercolour);
+  border-right:2px solid var(--cellsbordercolour);
+  
+}
+
+td:last-child {
+  border-right: 0px;
 }
 
 /******* Media Query for responsivness ********/

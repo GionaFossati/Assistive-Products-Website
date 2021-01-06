@@ -66,6 +66,20 @@ ul {
   box-shadow: -1px -9px 19px 1px rgba(0, 0, 0, 0.06);
 }
 
+.presentation__center {
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.presentation__verticalcenter {
+  display: flex;
+  align-items: center;
+}
+.presentation__fulldisplay {
+  width: 100vw;
+  height: 100vh;
+}
 
 @media all and (max-width:400px) {
   .button__primary {
