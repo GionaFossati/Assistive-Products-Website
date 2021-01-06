@@ -36,8 +36,6 @@ return(
                     undoubtable source.
                 </p>
             </div>
-            <Button id="cta__hero" className="button__primary" alt="Go to Simma's Works" onClick={()=> window.location =
-                "/works"}>My Works</Button>
             </Col>
         </Row>
     </Grid>
