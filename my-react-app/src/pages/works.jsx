@@ -1,26 +1,24 @@
 import React from 'react';
 import data from '../assets/products.json'
+import Product from '../components/productPreview';
 
 
-function loadData() {
-  return data;
-}
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 
 const ProductsList = () => {
   return (
-    <div>
+    <Grid fluid>
+           <Row>
         { 
           data.products.map( (singleProduct, index) => {
            return (
-             <div>
-               <h1>{singleProduct.name}</h1>
-               <p>{singleProduct.description}</p>
-             </div>
+                <Product product={singleProduct}/>
            )
           })
         }
-      </div>
+        </Row>
+      </Grid>
   )
 }
 

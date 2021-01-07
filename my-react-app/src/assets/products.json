@@ -6,7 +6,7 @@
             "shortDesc": "Nulla facilisi. Curabitur at lacus ac velit ornare lobortis.",
             "description": "Cras sagittis. Praesent nec nisl a purus blandit viverra. Ut leo. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Fusce a quam.",
             "pictures": [
-                "..assets/hero.png"
+                "../assets/hero.png"
             ],
             "dimension1": {
                 "dimension": "38x12cm",
@@ -23,7 +23,7 @@
             "shortDesc": "Nulla facilisi. Curabitur at lacus ac velit ornare lobortis.",
             "description": "Cras sagittis. Praesent nec nisl a purus blandit viverra. Ut leo. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Fusce a quam.",
             "pictures": [
-                "..assets/homeimage1.png"
+                "../assets/homeimage1.png"
             ],
             "dimension1": {
                 "dimension": "38x12cm",
