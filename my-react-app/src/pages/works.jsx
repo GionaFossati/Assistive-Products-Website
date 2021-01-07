@@ -1,13 +1,40 @@
-import React from "react";
-import NavBar from '../components/navbar';
-/* We simply can use an array and loop and print each user */
+import React from 'react';
+import data from '../assets/products.json'
 
 
-const WorksPage = () => {
+function loadData() {
+  return data;
+}
+
+
+const ProductsList = () => {
   return (
-    <NavBar />
+    <div>
+        { 
+          data.products.map( (singleProduct, index) => {
+           return (
+             <div>
+               <h1>{singleProduct.name}</h1>
+               <p>{singleProduct.description}</p>
+             </div>
+           )
+          })
+        }
+      </div>
   )
-};
+}
 
 
-export default WorksPage;
+function WorkPage() {
+  return (
+  <div>
+      <main id="main">
+        <ProductsList />
+      </main>
+      
+  </div>
+  
+  )
+  }
+  
+  export default WorkPage;
