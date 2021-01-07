@@ -1,18 +1,26 @@
 import React from 'react';
 import {render} from 'react-dom';
 
+import "./productPreview.css";
+
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 export default class Product extends React.Component {
     render() {
-        console.log(this.props.product.pictures[0])
+
         return(
 
-                        <Col xs={12} md={6} lg={4}>
-                            <img src={this.props.product.pictures[0]} alt={this.props.product.shortDesc} ></img>
-                            <h1> {this.props.product.name}</h1>
-                            <p>  {this.props.product.material} </p>
-                            <p>  {this.props.product.description} </p>
+                        <Col xs={12} md={6} lg={4} className="singleproduct">
+                            <a href="/">
+                            	<div className="presentation__center">
+                            	    <img src={(this.props.product.picture).default} alt={this.props.product.shortDesc}/>
+                            	</div>
+                            	<div id="product__info">
+                                    <h1 id="product__name"> {this.props.product.name}</h1>
+                                    <p id="product__material">  {this.props.product.material} </p>
+                                    <p>  {this.props.product.description} </p>
+                                </div>
+                            </a>
                         </Col>
                     
         )

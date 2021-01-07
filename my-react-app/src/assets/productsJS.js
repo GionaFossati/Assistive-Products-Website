@@ -1,12 +1,11 @@
-{
-    "products": [
+export const data = [
         {
             "id": 0,
-            "name": "shoes",
+            "name": "Doll",
             "material": "Oil on canvas",
             "shortDesc": "Nulla facilisi. Curabitur at lacus ac velit ornare lobortis.",
             "description": "Cras sagittis. Praesent nec nisl a purus blandit viverra. Ut leo. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Fusce a quam.",
-            "pictureName": "../assets/homeimage1.png",
+            "picture": require("../assets/homeimage1.png"),
             "dimension1": {
                 "dimension": "38x12cm",
                 "bw": "€1",
@@ -31,11 +30,11 @@
         },
         {
             "id": 1,
-            "name": "pants",
-            "material": "Shoes with tape",
+            "name": "Industrial Landscapes",
+            "material": "Oil on canvas",
             "shortDesc": "Nulla facilisi. Curabitur at lacus ac velit ornare lobortis.",
             "description": "Cras sagittis. Praesent nec nisl a purus blandit viverra. Ut leo. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Fusce a quam.",
-            "pictureName": "homeimage1",
+            "picture": require("../assets/homeimage2.png"),
             "dimension1": {
                 "dimension": "334x121cm",
                 "bw": "€1",
@@ -60,11 +59,11 @@
         },
         {
             "id": 2,
-            "name": "panties",
-            "material": "Material unknown",
+            "name": "Vintage Dresses",
+            "material": "Oil on canvas",
             "shortDesc": "Nulla facilisi. Curabitur at lacus ac velit ornare lobortis.",
             "description": "Cras sagittis. Praesent nec nisl a purus blandit viverra. Ut leo. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Fusce a quam.",
-            "pictureName": "homeimage1",
+            "picture": require("../assets/homeimage3.png"),
             "dimension1": {
                 "dimension": "3332x1121cm",
                 "bw": "€1",
@@ -89,4 +88,3 @@
         }
         
     ]
-}
