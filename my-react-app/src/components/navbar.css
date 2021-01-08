@@ -40,11 +40,12 @@
 
 
 .navbar__item {
+  font-size: 20px;
   position: relative;
   margin: 0px 15px 0px 15px;
   padding: 16px 16px;
   cursor: pointer;
-  vertical-align: right;
+  vertical-align: center;
 }
 
 .navbar_item_active {
