@@ -5,7 +5,15 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import NavBar from '../components/navbar';
 import Footer from '../components/footer';
 
-import SimmaImage from '../assets/symmaimage.svg';
+import SimmaImage from '../assets/symmaimage.svg';  
+
+const ServicesList = () => (
+  <ul>
+    {['Fine Art Paintings', 'Digital Paintings', 'Personalized Gifts', 'Custom Requests'].map(function(item) {
+      return <li key={item}>{item}</li>;
+    })}
+  </ul>
+);
 
 const AboutPage = () => {
   return (
@@ -23,25 +31,7 @@ const AboutPage = () => {
       <Row>
         <Col xs={12} s={12} m={12} l={12}>
         <h5>Services Offered</h5>
-          <ul>
-            <li>Fine Art Paintings</li>
-            <li>Digital Prints</li>
-            <li>Personalized Gifts</li>
-            <li>Custom Requests</li>
-          </ul>
-        </Col>
-      </Row>
-      <Row>
-        <Col xs={12} s={12} m={12} l={12}>
-        <h5>Connect with me on my social accounts</h5>
-        <Row>
-          <Col xs={6} s={6} m={6} l={6}>
-            <a href="https://www.instagram.com/simma__art/?hl=en" alt="Simma's Instagram page">Instagram</a>
-          </Col>
-          <Col xs={6} s={6} m={6} l={6}>
-           <a href="https://www.facebook.com/simmakart/" alt="Simma's Facebook page">Facebook</a>
-          </Col>
-        </Row>
+        <ServicesList />  
         </Col>
       </Row>
     </Grid>
@@ -55,7 +45,7 @@ function About() {
     <div> 
       <NavBar />
       <main id="main">
-          <About/>
+          <AboutPage/>
         </main>
       <Footer />
       </div>
@@ -63,4 +53,4 @@ function About() {
   )
   }
 
-export default AboutPage;
+export default About;
