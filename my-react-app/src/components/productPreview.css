@@ -33,3 +33,14 @@
     color: var(--primary);
     text-decoration: underline;
 }
+
+.singleproduct:hover #moredetails {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+#moredetails {
+    float: right;
+    font-weight: bold;
+    margin-right: 10%;
+}

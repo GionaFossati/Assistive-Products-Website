@@ -20,6 +20,7 @@ export default class Product extends React.Component {
                                     <p id="product__material">  {this.props.product.material} </p>
                                     <p>  {this.props.product.description} </p>
                                 </div>
+                                <a href="/" id="moredetails" alt={"see more details about " + this.props.product.name}>More details</a>
                             </a>
                         </Col>
                     
