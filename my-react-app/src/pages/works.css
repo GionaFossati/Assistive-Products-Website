@@ -32,6 +32,8 @@
     margin-bottom: 3vh;
 }
 
+/****** STYLING OF THE COLLECTIONS CARDS ******/
+
 .collection__card {
     border-radius: 13px;
     transition: ease 800ms;
@@ -41,6 +43,8 @@
     background-image: url("../assets/homeimage2.png");
 
 }
+
+/****** INDIVIDUAL BACKGROUNDS OF THE COLLECTIONS CARDS ******/
 
 #vintagedress {
     background: linear-gradient(0deg, rgba(119, 42, 219, 0.7), rgba(119, 42, 219, 0.7)), 
@@ -60,6 +64,8 @@
     background-size: cover;
     background-position: center;
 }
+
+/****** STYLING OF THE SINGLE PRODUCT CARD ******/
 
 .wrapper {
     position: relative;
@@ -94,7 +100,6 @@
     color: white;
 
   }
-
 
 @media all and (max-width:770px) {
     .wrapper {

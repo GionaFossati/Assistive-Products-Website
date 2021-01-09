@@ -40,28 +40,10 @@ const CollectionsList = () => {
   )
 }
 
-
-
-const ProductsList = () => {
-  return (
-    <Grid fluid>
-           <Row id="products__row">
-        { 
-          data.map( (singleProduct) => {
-           return (
-                <Product product={singleProduct}/>
-           )
-          })
-        }
-        </Row>
-      </Grid>
-  )
-}
-
 const ProductsListUpdated = ({productlist=[]}) => {
   return (
-    <Grid fluid className="products__grid">
-           <Row id="products__row">
+    <Grid fluid id="products__grid">
+           <Row id="products__row" aria-live="polite">
         { 
           productlist.map( (singleProduct) => {
            return (
@@ -80,15 +62,6 @@ function WorkPage() {
   const [productsListDefault, setProductsListDefault] = useState();
   const [productsList, setProductsList] = useState();
 
-  const fetchData = async () => {
-    return(
-        data => {
-          setProductsList(data) 
-          setProductsListDefault(data)
-        }
-      )
-    }
-
   const updateInput = async (input) => {
      const filtered = productsListDefault.filter(singleProduct => {
       return singleProduct.name.toLowerCase().includes(input.toLowerCase())
@@ -97,7 +70,8 @@ function WorkPage() {
      setProductsList(filtered);
   }
 
-  useEffect( () => {setProductsList(data) 
+  useEffect( () => {
+    setProductsList(data) 
     setProductsListDefault(data)},[]);
 
   return (

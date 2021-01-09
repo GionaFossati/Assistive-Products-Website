@@ -25,6 +25,16 @@ ul {
   padding-inline-start: 0px;
 }
 
+/****** screen-reader only class ******/
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  }
+
 .button__primary {
 
   box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.13);
@@ -66,16 +76,20 @@ ul {
   box-shadow: -1px -9px 19px 1px rgba(0, 0, 0, 0.06);
 }
 
+/****** center elements horizzontally in a div ******/
 .presentation__center {
   margin: auto;
   justify-content: center;
   text-align: center;
 }
 
+/****** center elements vertically in a div ******/
 .presentation__verticalcenter {
   display: flex;
   align-items: center;
 }
+
+/****** make a div with 100% display height and display width ******/
 .presentation__fulldisplay {
   width: 100vw;
   height: 100vh;
