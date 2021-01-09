@@ -85,7 +85,7 @@ function WorkPage() {
           
           <Row id="products__head">
               <Col xs={12} md={6} lg={6}>
-                  <h2 id="search__title" className="paintings__title">Paintings</h2>
+                  <h2 id="search__title" className="paintings__title">All Simma's Works</h2>
             </Col>
               <Col xs={12} md={6} lg={6} id="search__column">
                   <SearchBar

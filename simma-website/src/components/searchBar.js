@@ -2,7 +2,6 @@ import React from 'react';
 import "./searchBar.css"
 
 const SearchBar = ({input:keyword, onChange:setKeyword}) => {
-  const BarStyling = {fontSize:"18px",height:"2rem",width:"20rem",background:"#F2F1F9", border:"none", padding:"0.5rem"};
   return (
     <div>    
         <form role='search' action="/" method="get">
@@ -12,7 +11,6 @@ const SearchBar = ({input:keyword, onChange:setKeyword}) => {
 
         <input
          aria-controls="products__" 
-         /* style={BarStyling} */
          className="search__input"
          key="random1"
          value={keyword}
@@ -21,8 +19,8 @@ const SearchBar = ({input:keyword, onChange:setKeyword}) => {
                 document.getElementById("search__title").innerHTML = "Your search results for \"" + e.target.value + "\""; 
                 setKeyword(e.target.value)
                 
-                if (e.target.value=="") {
-                    document.getElementById("search__title").innerHTML = "Paintings" 
+                if (e.target.value==="") {
+                    document.getElementById("search__title").innerHTML = "All Simma's Works" 
                 }
             }
         }   
