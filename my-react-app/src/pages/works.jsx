@@ -40,7 +40,7 @@ const CollectionsList = () => {
   )
 }
 
-const ProductsListUpdated = ({productlist=[]}) => {
+const ProductsList = ({productlist=[]}) => {
   return (
     <Grid fluid id="products__grid">
            <Row id="products__row" aria-live="polite">
@@ -63,8 +63,8 @@ function WorkPage() {
   const [productsList, setProductsList] = useState();
 
   const updateInput = async (input) => {
-     const filtered = productsListDefault.filter(singleProduct => {
-      return singleProduct.name.toLowerCase().includes(input.toLowerCase())
+    const filtered = productsListDefault.filter(singleProduct => {
+      return JSON.stringify(singleProduct).toLowerCase().includes(input.toLowerCase()) 
      })
      setInput(input);
      setProductsList(filtered);
@@ -95,7 +95,7 @@ function WorkPage() {
             </Col>
           </Row>
 
-          <ProductsListUpdated productlist={productsList}/>
+          <ProductsList productlist={productsList}/>
         </main>
       <Footer />    
   </div>
