@@ -80,17 +80,21 @@ function WorkPage() {
       <main id="main">
           
           <h1 id="page__title">My Works</h1>
-          <h2 id="paintings__title">Collections</h2>
+          <h2 className="paintings__title">Collections</h2>
           <CollectionsList />
-          <h2 id="paintings__title">Paintings</h2>
-          <Row className="presentation__center">
-              <Col xs={12} md={12} lg={12}>
+          
+          <Row id="products__head">
+              <Col xs={12} md={6} lg={6}>
+                  <h2 id="search__title" className="paintings__title">Paintings</h2>
+            </Col>
+              <Col xs={12} md={6} lg={6} id="search__column">
                   <SearchBar
                     input={input} 
                     onChange={updateInput}
                   />
             </Col>
           </Row>
+
           <ProductsListUpdated productlist={productsList}/>
         </main>
       <Footer />    
