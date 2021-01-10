@@ -1,0 +1,12 @@
+.title {
+    font-size: 22px;
+}
+
+#social__contact {
+    border-radius: 13px;
+    background: var(--primary);
+    color: white;
+    padding: 2rem;
+    margin-top: 10vh;
+}
+

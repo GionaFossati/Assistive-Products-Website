@@ -23,14 +23,14 @@ const Hero = () => {
     <div className="hero">
       <Grid fluid>
         <Row>
-              <Col xs={12} md={12} lg={6}>
+              <Col xs={12} md={6} lg={6}>
                 <h1 className="hero__title">Simma</h1>
                 <p className="subtitle"> Toronto-based fine artist</p>
                 <Button id="cta__hero" className="button__primary" alt="Go to Simma's Works" onClick={() => window.location = "/product"}>My Works</Button>
               </Col>
               <Col xs={0} md={6} lg={6}>
                 <img src={HeroImage} alt="" className="hero__image"></img>
-                <img src={HeroBackImage} alt="" className="hero__backimage shadow__up"></img>
+                {/* <img src={HeroBackImage} alt="" className="hero__backimage shadow__up"></img> */}
                 <img src={ImgDecoration1} alt="" className="hero__decoration"></img>
               </Col>
             </Row>
@@ -51,7 +51,7 @@ const Services = () => {
               </Col>
         </Row>
         <Row>
-            <Col xs={12} md={12} lg={12} >
+            <Col xs={12} md={4} lg={8} >
                 <ul className='services__list shadow__up'>
                  
                   <li className="services__item">
@@ -65,11 +65,13 @@ const Services = () => {
                   </li>
                 </ul>
               </Col>
+            <Col xs={12} md={8} lg={4} >            
+                <img src={HomeImage3} alt="" className="services__image2"></img>
+              </Col>
           </Row>
       </Grid>
       
-      <img src={ServicesImage} alt="" className="services__image"></img>
-      <img src={HomeImage3} alt="" className="services__image2"></img>
+      
     </div>
   )
 }
@@ -103,7 +105,6 @@ const Presentation = () => {
         </Col>
 
         <Col xs={12} md={6} lg={3} className="presentation__center">
-        {/* <div id="image4" alt=""></div> */}
         <img src={HomeImage4} alt=""></img>
         </Col>
         </Row>

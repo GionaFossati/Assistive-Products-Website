@@ -23,7 +23,12 @@ export default class Product extends React.Component {
                                 <a href="/" id="moredetails" alt={"see more details about " + this.props.product.name}>More details</a>
                             </a>
                         </Col>
+
+                        /* importa react router link
+                           cambiare href con il link di react router : to al pagina del prodotto 
+                            IN APP.JS PASSA DATA IN BASE ALL'ID
+                           */
                     
-        )
+        ) 
     }
 }

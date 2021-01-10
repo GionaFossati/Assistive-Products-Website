@@ -90,5 +90,8 @@ footer {
   .footer__socialtext {
     padding-top: 10%;
   }
+  .footer {
+    padding: 0% 0%; 
+  }
 
 }

@@ -58,16 +58,16 @@ const Footer = () => (
     <Col xs={12} md={3} lg={3}>
     </Col>
     <Col xs={12} md={6} lg={3}>
-      <a href="https://www.instagram.com/simma__art/?hl=en" className="footer__socialtext presentation__center">
-        <img src={InstagramLogo} alt="" height="24px" width="24px" className="socialogo"></img>
-        Instagram
-      </a>
+        <a href="https://www.instagram.com/simma__art/?hl=en" className="footer__socialtext presentation__center">
+          <img src={InstagramLogo} alt="" height="24px" width="24px" className="socialogo"></img>
+          Instagram
+        </a>
     </Col>
     <Col xs={12} md={6} lg={3}>
-    <a href="https://www.facebook.com/simmakart/" className="footer__socialtext presentation__center">
-        <img src={FacebookLogo} alt="" height="24px" width="24px" className="socialogo"></img>
-        Facebook
-      </a>
+        <a href="https://www.facebook.com/simmakart/" className="footer__socialtext presentation__center">
+            <img src={FacebookLogo} alt="" height="24px" width="24px" className="socialogo"></img>
+            Facebook
+          </a>
     </Col>
     <Col xs={12} md={3} lg={3}>
     </Col>

@@ -1,15 +1,17 @@
 import React from "react";
 import "./productpage.css";
 
-import { Button } from "reakit/Button";
-
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import NavBar from '../components/navbar';
 import Footer from '../components/footer';
 
 import HeroImage from '../assets/hero.png';
 
-const Product = () => {
+const Product = (ascs) => {
+/* constructor props super props this state 
+    pass prop react as function to component
+*/
+
 return(
 <div className="product presentation__verticalcenter">
     <Grid fluid>
@@ -89,7 +91,7 @@ function ProductTable() {
   }
 
 
-function ProductPage() {
+function ProductPage(csca) {
 return (
 <div>
     <NavBar />

@@ -33,6 +33,7 @@ class App extends Component {
        <Route exact path="/works" component={WorksPage} />
        <Route exact path="/about" component={AboutPage} />
        <Route exact path="/product" component={ProductPage} />
+       {/* <Route exact path="/product/:id" component={ProductPage} /> */}
       </Router>
     );
   }
