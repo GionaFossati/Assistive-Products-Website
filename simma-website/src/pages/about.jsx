@@ -34,6 +34,16 @@ const AboutPage = () => {
         <ServicesList />  
         </Col>
       </Row>
+      <Row>
+        <Col xs={12} s={12} m={12} l={12}>
+        <h5>Reviews</h5>
+        <p>Simma Sudley has the talent, professionalism, and attention to creating high quality art continuously receives praise and outstanding reviews by collectors, designers, and her repeat clients.
+</p>
+      <p>"Simma is a superb artist, and we've felt so proud to have her work hanging in our home. This painting looks exactly like the photograph - only better because the thick application of paint is so compelling.  I look at this painting and my heart soars.  So her art also has the rare capacity of creating great joy."<i>- 3x Repeat Client, Kate Ludeman</i></p>
+      <p>"I received my painting last week and love it!! You are so talented. Wish you had a gallery here in Birmingham. I am looking to order another painting. Probably will put my order in this afternoon once I make a decision.  Thanks you for representing your work so well online. It's perfect and looks great in our home!"<i>- Designer, Roberto</i></p>
+      <p>"Beautifully done art work. We were very impressed and were happy to have her work in our exhibit in Toronto"<i>- Art Collector, Patricia Gonzales</i></p>
+        </Col>
+      </Row>
     </Grid>
   </div>
 
