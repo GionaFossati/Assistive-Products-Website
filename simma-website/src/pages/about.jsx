@@ -7,7 +7,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import NavBar from '../components/navbar';
 import Footer from '../components/footer';
 
-import SimmaImage from '../assets/symmaimage.svg';  
+import SimmaImage from '../assets/symmaimage2.png';  
 import InstagramLogo from '../assets/insta.svg';
 import FacebookLogo from '../assets/face.svg';
 
