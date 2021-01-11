@@ -1,19 +1,64 @@
-
 /****** CONTACT FORM *******/
+.contact__form {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
 
-  .contact__form {
-    display: inline-block;
-    font-size: 20px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    margin-block-start: 0;
-    margin-block-end: 0;
-  }
-  
-  .form__box {
-    margin: auto;
-    padding: 10% 2%;
-  }
-  
-  
+.form__box {
+  margin: auto;
+  padding: 10% 2%;
+}
+
+input,
+textarea {
+  height: 2rem;
+  transition: transform 250ms ease-in-out;
+  background-color: transparent;
+  border-radius: 12px;
+  border: 2px solid rgba(128, 128, 128, 0.8);
+  ;
+  padding: 0.5rem 1rem;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  outline:none
+}
+
+input:focus, input:hover  {
+  -webkit-box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.1);
+  border: 2px solid var(--primary) ;
+  outline: 0;
+}
+
+textarea:focus, textarea:hover  {
+  -webkit-box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.1);
+  border: 2px solid var(--primary) ;
+  outline: 0;
+}
+
+
+
+
+#contactbutton {
+  padding: 0.6em 1em;
+  margin: 3em 0.2em 0.2em 0;
+  border-radius: 0.22em;
+  box-sizing: border-box;
+  font-size: medium;
+}
+
+.input__message {
+  color: red;
+  font-size: 16px;
+
+  font-weight: medium;
+}

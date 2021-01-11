@@ -50,7 +50,7 @@ const ContactForm = () => {
         </Row>
 
         <Row xs={12} md={12} lg={12}>
-          <FormMessage {...form} name="name" />
+          <FormMessage className="input__message" {...form} name="name" />
         </Row>
         
         <Row xs={12} md={12} lg={12}>
@@ -64,7 +64,7 @@ const ContactForm = () => {
         </Row>
 
         <Row xs={12} md={12} lg={12}>
-          <FormMessage {...form} name="email" />
+          <FormMessage className="input__message"{...form} name="email" />
         </Row>
         
 
@@ -85,13 +85,14 @@ const ContactForm = () => {
         
 
         <Row xs={12} md={12} lg={12} >
-          <FormMessage {...form} name="message" />
+          <FormMessage className="input__message"{...form} name="message" />
         </Row>
 
-        <Row xs={12} md={12} lg={12} >
-          <FormSubmitButton {...form}>Submit</FormSubmitButton>
+        <Row xs={12} md={12} lg={12} className="presentation__center">
+          <FormSubmitButton {...form} id="contactbutton" className="button__primary">Submit</FormSubmitButton>
         </Row>
       </Form>
+      </Grid>
     );
   }
 
