@@ -20,7 +20,7 @@ import HomeImage4 from '../assets/homeimage4.png';
 
 const Hero = () => {
   return(
-    <div className="hero">
+    <div className="hero" role="banner">
       <Grid fluid>
         <Row>
               <Col xs={12} md={6} lg={6}>
@@ -29,9 +29,9 @@ const Hero = () => {
                 <Button id="cta__hero" className="button__primary" alt="Go to Simma's Works" onClick={() => window.location = "/product"}>My Works</Button>
               </Col>
               <Col xs={0} md={6} lg={6}>
-                <img src={HeroImage} alt="One example of Simma's artwork depicting Jerusalem" className="hero__image"></img>
+                <img src={HeroImage} alt="" className="hero__image"></img>
                 {/* <img src={HeroBackImage} alt="" className="hero__backimage shadow__up"></img> */}
-                <img src={ImgDecoration1} alt="Background for Simma's artwork" className="hero__decoration"></img>
+                <img src={ImgDecoration1} alt="" className="hero__decoration"></img>
               </Col>
             </Row>
       </Grid>
@@ -66,7 +66,7 @@ const Services = () => {
                 </ul>
               </Col>
             <Col xs={12} md={8} lg={4} >            
-                <img src={HomeImage3} alt="Example of Simma's artwork with a dress" className="services__image2"></img>
+                <img src={HomeImage3} alt="" className="services__image2"></img>
               </Col>
           </Row>
       </Grid>
@@ -93,19 +93,19 @@ const Presentation = () => {
             </Row>
         <Row id="artrow">
         <Col xs={12} md={6} lg={3} className="presentation__center">
-        <img src={HomeImage1} alt="Doll painting by Simma"></img>
+        <img src={HomeImage1} alt=""></img>
         </Col>
 
         <Col xs={12} md={6} lg={3} className="presentation__center">
-        <img src={HomeImage2} alt="Industrial painting by Simma" ></img>
+        <img src={HomeImage2} alt="" ></img>
         </Col>
 
         <Col xs={12} md={6} lg={3} className="presentation__center">
-        <img src={HomeImage3} alt="Dress Painting by Simma"></img>
+        <img src={HomeImage3} alt=""></img>
         </Col>
 
         <Col xs={12} md={6} lg={3} className="presentation__center">
-        <img src={HomeImage4} alt="Jerusalem Painting by Simma"></img>
+        <img src={HomeImage4} alt=""></img>
         </Col>
         </Row>
         <Row xs={12} md={12} lg={12} className="presentation__center">
