@@ -58,13 +58,13 @@ const AboutPage = () => {
         </Col>
         <Col xs={6} md={3} lg={2} clas>
             <a href="https://www.instagram.com/simma__art/?hl=en" id="socialtext1">
-            <img src={InstagramLogo} alt="" height="24px" width="24px" className="socialogo"></img>
+            <img src={InstagramLogo} alt="Simma's Instagram Link" height="24px" width="24px" className="socialogo"></img>
             Instagram
           </a>
         </Col>
         <Col xs={6} md={3} lg={2}>
             <a href="https://www.facebook.com/simmakart/" id="socialtext2">
-            <img src={FacebookLogo} alt="" height="24px" width="24px" className="socialogo"></img>
+            <img src={FacebookLogo} alt="Simma's Facebook Link" height="24px" width="24px" className="socialogo"></img>
             Facebook
             </a>
         </Col>
