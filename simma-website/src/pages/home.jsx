@@ -9,9 +9,7 @@ import Footer from '../components/footer';
 import ContactForm from '../components/contactform';
 
 import HeroImage from '../assets/hero.png';
-import HeroBackImage from '../assets/heroback.svg';
 import ImgDecoration1 from '../assets/decoration.svg';
-import ServicesImage from '../assets/servicesimage.png';
 import SimmaImage from '../assets/symmaimage.svg';
 import HomeImage1 from '../assets/homeimage1.png';
 import HomeImage2 from '../assets/homeimage2.png';

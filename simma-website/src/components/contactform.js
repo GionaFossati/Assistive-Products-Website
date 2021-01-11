@@ -10,12 +10,12 @@ import {
     unstable_FormSubmitButton as FormSubmitButton,
   } from "reakit/Form";
 
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Grid, Row } from 'react-flexbox-grid';
 
 
 const ContactForm = () => {
     const form = useFormState({
-      values: { message: "", name: "" },
+      values: { message: "", name: "",email: "" },
       onValidate: (values) => {
         if (!values.message) {
           var errors = {
@@ -30,13 +30,41 @@ const ContactForm = () => {
           };
           throw errors;
         }
+        
+        if (!values.email) {
+          errors = {
+            email: "I need a valid email",
+          };
+          throw errors;
+        }
       },
 
       onSubmit: (values) => {
+        if (!values.message) {
+          var errors = {
+            message: "Please enter a message.",
+          };
+          throw errors;
+        }
+
+        if (!values.name) {
+          errors = {
+            name: "How can we be friends without knowing your name?",
+          };
+          throw errors;
+        }
+        
+        if (!values.email) {
+          errors = {
+            name: "I need a valid email",
+          };
+          throw errors;
+        }
         alert(JSON.stringify(values, null, 2));
       },
     });
     return (
+      <Grid>
       <Form {...form} className="contact__form presentation__center">
         
         <Row xs={12} md={12} lg={12}>
@@ -46,7 +74,7 @@ const ContactForm = () => {
         </Row>
 
         <Row xs={12} md={12} lg={12}>
-          <FormInput {...form} name="name" placeholder="Type your name" />
+          <FormInput {...form} name="name" placeholder="Type your name"  aria-required="true"/>
         </Row>
 
         <Row xs={12} md={12} lg={12}>
@@ -60,7 +88,8 @@ const ContactForm = () => {
         </Row>
 
         <Row xs={12} md={12} lg={12}>
-          <FormInput {...form} name="email" placeholder="Type your email" type="email" />
+          <FormInput {...form} name="email" placeholder="Type your email" type="email" aria-required="true"/>
+
         </Row>
 
         <Row xs={12} md={12} lg={12}>
@@ -80,6 +109,8 @@ const ContactForm = () => {
             name="message"
             placeholder="Type here what would you like to contact me about"
             as="textarea"
+            aria-required="true" 
+            data-invmsg="Message is invalid"
           />
         </Row>
         
