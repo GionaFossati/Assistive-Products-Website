@@ -11,7 +11,7 @@ export default class Product extends React.Component {
         return(
 
                         <Col xs={12} md={6} lg={4} className="singleproduct">
-                            <a href="/">
+                            <a href="/product">
                             	<div className="presentation__center">
                             	    <img src={(this.props.product.picture).default} alt={this.props.product.shortDesc}/>
                             	</div>
@@ -20,7 +20,7 @@ export default class Product extends React.Component {
                                     <p id="product__material">  {this.props.product.material} </p>
                                     <p>  {this.props.product.description} </p>
                                 </div>
-                                <a href="/" id="moredetails" alt={"see more details about " + this.props.product.name}>More details</a>
+                                <a href="/product" id="moredetails" alt={"see more details about " + this.props.product.name}>More details</a>
                             </a>
                         </Col>
 

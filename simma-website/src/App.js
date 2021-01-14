@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
 
-import UsersPage from "./pages/users";
 import WorksPage from "./pages/works";
 import ProductPage from "./pages/productpage";
 import AboutPage from "./pages/about";
@@ -29,7 +28,6 @@ class App extends Component {
       <Router>
        {/*All our Routes goes here!*/}
        <Route exact path="/" component={Home} />
-       <Route exact path="/users" component={UsersPage} />
        <Route exact path="/works" component={WorksPage} />
        <Route exact path="/about" component={AboutPage} />
        <Route exact path="/product" component={ProductPage} />
