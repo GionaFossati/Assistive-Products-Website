@@ -91,19 +91,19 @@ const Presentation = () => {
             </Row>
         <Row id="artrow">
         <Col xs={12} md={6} lg={3} className="presentation__center">
-        <img src={HomeImage1} alt=""></img>
+        <img src={HomeImage1} alt=""  className="presentation_art shadow__low"></img>
         </Col>
 
         <Col xs={12} md={6} lg={3} className="presentation__center">
-        <img src={HomeImage2} alt="" ></img>
+        <img src={HomeImage2} alt=""  className="presentation_art shadow__low"></img>
         </Col>
 
         <Col xs={12} md={6} lg={3} className="presentation__center">
-        <img src={HomeImage3} alt=""></img>
+        <img src={HomeImage3} alt="" className="presentation_art shadow__low"></img>
         </Col>
 
         <Col xs={12} md={6} lg={3} className="presentation__center">
-        <img src={HomeImage4} alt=""></img>
+        <img src={HomeImage4} alt="" className="presentation_art shadow__low"></img>
         </Col>
         </Row>
         <Row xs={12} md={12} lg={12} className="presentation__center">
