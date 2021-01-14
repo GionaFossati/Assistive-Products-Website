@@ -17,17 +17,17 @@ const CollectionsList = () => {
     <Grid fluid>
            <Row id="collections__row">
             <Col xs={12} md={4} lg={4}>
-                  <a href="/" id="vintagedress" className="wrapper presentation__center presentation__verticalcenter">
+                  <a href="/vintage" id="vintagedress" className="wrapper presentation__center presentation__verticalcenter">
                     <h1 className="content">Vintage Dress Collection</h1>
                   </a>
               </Col>
             <Col xs={12} md={4} lg={4}>
-                  <a href="/" id="nineteenforty" className="wrapper presentation__center presentation__verticalcenter">
+                  <a href="/nineteenforty" id="nineteenforty" className="wrapper presentation__center presentation__verticalcenter">
                     <h1 className="content">1940s Inspired Collection</h1>
                   </a>
               </Col>
             <Col xs={12} md={4} lg={4}>
-                  <a href="/" id="jerusalem" className="wrapper presentation__center presentation__verticalcenter">
+                  <a href="/jerusalem" id="jerusalem" className="wrapper presentation__center presentation__verticalcenter">
                     <h1 className="content">Jerusalem</h1>
                   </a>
               </Col>

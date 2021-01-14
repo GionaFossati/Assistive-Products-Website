@@ -1,0 +1,111 @@
+#page__title {
+    font-size: 48px;
+    margin-left: 7vw;
+    margin-block-start: 0em;
+    margin-block-end: 0.1em;
+}
+
+#collection_description {
+    font-size: 24px;
+}
+
+#collections__row {
+    padding: 0% 10%;
+    margin-bottom: 3vh;
+}
+
+#products__grid {
+    transition: ease 800ms;
+}
+
+#products__row {
+    padding: 0% 5vw;
+    margin-bottom: 3vh;
+}
+
+/****** STYLING OF THE COLLECTIONS CARDS ******/
+
+.collection__card {
+    border-radius: 13px;
+    transition: ease 800ms;
+    -webkit-box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.13);
+    -moz-box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.13);
+    box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.13);
+    background-image: url("../assets/homeimage2.png");
+
+}
+
+/****** INDIVIDUAL BACKGROUNDS OF THE COLLECTIONS CARDS ******/
+
+#vintagedress {
+    background: linear-gradient(0deg, rgba(119, 42, 219, 0.7), rgba(119, 42, 219, 0.7)), 
+    url("../assets/homeimage3.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#nineteenforty {
+    background: linear-gradient(0deg, rgba(119, 42, 219, 0.7), rgba(119, 42, 219, 0.7)), 
+    url("../assets/homeimage2.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#jerusalem {
+    background: linear-gradient(0deg, rgba(119, 42, 219, 0.7), rgba(119, 42, 219, 0.7)), 
+    url("../assets/hero.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#search__column {
+    padding-right: 7vw;
+    justify-content: right;
+    text-align: right;
+}
+
+/****** STYLING OF THE SINGLE PRODUCT CARD ******/
+
+.wrapper {
+    position: relative;
+    height: 12vh;
+    width: 24vw;
+    border-radius: 13px;
+    transition: ease 300ms;
+    -webkit-box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.13);
+    -moz-box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.13);
+    box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.13);
+    /* background: linear-gradient(0deg, rgba(119, 42, 219, 0.7), rgba(119, 42, 219, 0.7)), 
+    url("../assets/homeimage3.png") 0 0 no-repeat; */
+    overflow: hidden;
+  }
+  
+.wrapper:hover  {
+    -webkit-box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.33);
+    box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.33);
+    text-decoration: underline;
+}
+
+.wrapper:hover .content  {
+    text-decoration: underline;
+}
+  .content {
+    position: absolute;
+    z-index: 10;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 24px;
+    color: white;
+
+  }
+
+@media all and (max-width:770px) {
+    .wrapper {
+        position: relative;
+        height: 30vh;
+        width: 80vw;
+        margin-bottom: 3vh;
+        margin-top: 3vh;
+    }
+}
+
+  
