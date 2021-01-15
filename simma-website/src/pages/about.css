@@ -4,9 +4,33 @@
 
 #social__contact {
     border-radius: 13px;
-    background: var(--primary);
-    color: white;
+    align-items: center;
+    color: var(--primary);
+    color: black;
     padding: 2rem;
     margin-top: 10vh;
+    margin-bottom: 5vh;
+    -webkit-box-shadow: 0px 0px 23px 3px rgba(155, 31, 185, 0.16);
+    -moz-box-shadow: 0px 0px 23px 3px rgba(155, 31, 185, 0.16);
+    box-shadow: 0px 0px 23px 3px rgba(155, 31, 185, 0.16);
 }
 
+.socialogo {
+    margin: auto;
+
+}
+
+.socialtext {
+    color: var(--black);
+}
+
+.socialtext:hover {
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--primary);
+}
+
+.socialimage {
+    transform: translateY(6px);
+    margin-right: 6px;
+}

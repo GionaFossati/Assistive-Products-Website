@@ -8,8 +8,8 @@ import NavBar from '../components/navbar';
 import Footer from '../components/footer';
 
 import SimmaImage from '../assets/symmaimage2.png';  
-import InstagramLogo from '../assets/insta.svg';
-import FacebookLogo from '../assets/face.svg';
+import InstagramLogo from '../assets/insta2.svg';
+import FacebookLogo from '../assets/face2.svg';
 
 
 const ServicesList = () => (
@@ -56,15 +56,15 @@ const AboutPage = () => {
         <Col xs={12} md={6} lg={8}>
             <h1 className="title">Contact me on my socials</h1>
         </Col>
-        <Col xs={6} md={3} lg={2} clas>
-            <a href="https://www.instagram.com/simma__art/?hl=en" id="socialtext1">
-            <img src={InstagramLogo} alt="Simma's Instagram Link" height="24px" width="24px" className="socialogo"></img>
+        <Col xs={6} md={3} lg={2} className="socialogo">
+            <a href="https://www.instagram.com/simma__art/?hl=en" className="socialtext">
+            <img src={InstagramLogo} alt="Simma's Instagram Link" height="24px" width="24px" className="socialimage"></img>
             Instagram
           </a>
         </Col>
-        <Col xs={6} md={3} lg={2}>
-            <a href="https://www.facebook.com/simmakart/" id="socialtext2">
-            <img src={FacebookLogo} alt="Simma's Facebook Link" height="24px" width="24px" className="socialogo"></img>
+        <Col xs={6} md={3} lg={2} className="socialogo">
+            <a href="https://www.facebook.com/simmakart/" className="socialtext">
+            <img src={FacebookLogo} alt="Simma's Facebook Link" height="24px" width="24px" className="socialimage"></img>
             Facebook
             </a>
         </Col>
