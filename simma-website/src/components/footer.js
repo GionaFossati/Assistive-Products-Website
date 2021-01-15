@@ -4,8 +4,8 @@ import "./footer.css"
 
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
-import InstagramLogo from '../assets/insta.svg';
-import FacebookLogo from '../assets/face.svg';
+import InstagramLogo from '../assets/insta2.svg';
+import FacebookLogo from '../assets/face2.svg';
 
 const Footer = () => (
   <footer className="shadow__up">
