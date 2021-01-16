@@ -7,6 +7,10 @@
     margin-top: 10vh;
 }
 
+#feedback_secondrow {
+    margin-top: 5vh;
+}
+
 #social__contact {
     border-radius: 13px;
     align-items: center;
