@@ -207,8 +207,9 @@ h6 {
 } */
 
 p {
-    --pmin: 14px;
+    --pmin: 16px;
     --pmax: 20px;
+    line-height: 1.5rem;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
