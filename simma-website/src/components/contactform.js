@@ -40,7 +40,7 @@ const ContactForm = () => {
       },
 
       onSubmit: (values) => {
-        alert(JSON.stringify(values, null, 2));
+        alert("Information submitted correctly! " + JSON.stringify(values, null, 2));
       },
     });
     return (
