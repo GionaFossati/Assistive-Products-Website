@@ -20,9 +20,9 @@ return(
             <img src={HeroImage} alt="" className="product__image presentation__center shadow__low"></img>
             </Col>
             <Col xs={12} md={12} lg={6}>
-            <h1 className="product__title">Jerusalem</h1>
+            <h1 className="product__title">Jerusalem at Twilight</h1>
             <p className="product__herodescription">
-                Oil on canvas
+            Watercolor, Mixed Media
             </p>
             <p id="product__measure">120x70cm</p>
             <p className="product__requesttext">
@@ -31,11 +31,7 @@ return(
             <div className="product__description">
             <h2 className="product__descriptiontitle"> Description</h2>
                 <p id="description">
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                    Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
-                    Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
-                    undoubtable source.
+                Beautiful painting of an overview of Jerusalem with a soft color pallete with shades of purple, yellow, and orange. The beauty of Jerusalem is present and is the main focus among the softened colors in the background. Beautiful, vibrant, and sure to be the focal point of any room decor! Each painting purchased comes with a signed and dated Certificate of Authenticity verifying that this is an original piece of art created by internationally collected artist, Simma Sudaley. Available and ready to ship.
                 </p>
             </div>
             </Col>
@@ -61,25 +57,25 @@ function ProductTable() {
                                 <th scope="col" id="coloured__frame">Coloured + Frame</th>
                             </tr>
                             <tr>
-                                <th scope="row" id="70x100cm">70x100cm</th>
-                                <td headers="70x100cm bw">30€</td>
-                                <td headers="70x100cm bw__frame">30€</td>
-                                <td headers="70x100cm coloured">30€</td>
-                                <td headers="70x100cm coloured__frame">30€</td>
+                                <th scope="row" id="70x100cm">100x100cm</th>
+                                <td headers="70x100cm bw">210€</td>
+                                <td headers="70x100cm bw__frame">420€</td>
+                                <td headers="70x100cm coloured">350€</td>
+                                <td headers="70x100cm coloured__frame">560€</td>
                             </tr>
                             <tr>
-                                <th scope="row">80x120cm</th>
-                                <td>30€</td>
-                                <td>30€</td>
-                                <td>30€</td>
-                                <td>30€</td>
+                                <th scope="row">200x200cm</th>
+                                <td>360€</td>
+                                <td>550€</td>
+                                <td>450€</td>
+                                <td>560€</td>
                             </tr>
                             <tr>
-                                <th scope="row">80x120cm</th>
-                                <td>30€</td>
-                                <td>30€</td>
-                                <td>30€</td>
-                                <td>30€</td>
+                                <th scope="row">300x300cm</th>
+                                <td>490€</td>
+                                <td>650€</td>
+                                <td>590€</td>
+                                <td>780€</td>
                             </tr>
                         </table>
                     </Col>
