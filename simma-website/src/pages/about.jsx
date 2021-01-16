@@ -1,4 +1,6 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
+
 import "./about.css";
 import "../components/footer.css";
 
@@ -78,6 +80,9 @@ const AboutPage = () => {
 function About() {
   return (
     <div> 
+      <Helmet>
+        <title>Simma Art - About Page</title>
+      </Helmet>
       <NavBar />
       <main id="main">
           <AboutPage/>

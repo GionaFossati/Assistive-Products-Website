@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 import { data } from '../assets/dressCollection.js'
 import "./collection.css";
@@ -48,6 +49,9 @@ function WorkPage() {
 
   return (
   <div>
+      <Helmet>
+        <title>Simma Art - Vintage Dress Collection</title>
+      </Helmet>
       <NavBar />
       <main id="main">
             <Row>

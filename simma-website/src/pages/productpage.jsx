@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import "./productpage.css";
 
 import { Grid, Row, Col } from 'react-flexbox-grid';
@@ -90,6 +91,9 @@ function ProductTable() {
 function ProductPage(csca) {
 return (
 <div>
+<Helmet>
+        <title>Simma Art - Jerusalem at Twilight</title>
+      </Helmet>
     <NavBar />
     <main id="main">
         <Product />

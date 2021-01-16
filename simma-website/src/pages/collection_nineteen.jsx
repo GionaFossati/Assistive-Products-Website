@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 import { data } from '../assets/1940Collection.js'
 import "./collection.css";
@@ -48,6 +49,9 @@ function NineteenCollectionPage() {
 
   return (
   <div>
+      <Helmet>
+        <title>Simma Art - 1940 Inspired Collection</title>
+      </Helmet>
       <NavBar />
       <main id="main">
             <Row>

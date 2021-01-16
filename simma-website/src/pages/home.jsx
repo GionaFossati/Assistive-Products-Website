@@ -1,6 +1,7 @@
 import React from "react";
 import "./home.css";
 
+import { Helmet } from 'react-helmet';
 import { Button } from "reakit/Button";
 
 import { Grid, Row, Col } from 'react-flexbox-grid';
@@ -140,6 +141,9 @@ const Contact = () => {
 function Home() {
   return (
     <div> 
+      <Helmet>
+        <title>Simma Art</title>
+      </Helmet>
       <NavBar />
       <main id="main">
           <Hero />  
