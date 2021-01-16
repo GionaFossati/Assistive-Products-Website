@@ -18,21 +18,21 @@ const ContactForm = () => {
       values: { message: "", name: "",email: "" },
       onValidate: (values) => {
         if (!values.message) {
-          var errors = {
+          const errors = {
             message: "Please enter a message.",
           };
           throw errors;
         }
 
         if (!values.name) {
-          errors = {
+          const errors = {
             name: "How can we be friends without knowing your name?",
           };
           throw errors;
         }
         
         if (!values.email) {
-          errors = {
+          const errors = {
             email: "I need a valid email",
           };
           throw errors;
@@ -40,32 +40,12 @@ const ContactForm = () => {
       },
 
       onSubmit: (values) => {
-        if (!values.message) {
-          var errors = {
-            message: "Please enter a message.",
-          };
-          throw errors;
-        }
-
-        if (!values.name) {
-          errors = {
-            name: "How can we be friends without knowing your name?",
-          };
-          throw errors;
-        }
-        
-        if (!values.email) {
-          errors = {
-            name: "I need a valid email",
-          };
-          throw errors;
-        }
         alert(JSON.stringify(values, null, 2));
       },
     });
     return (
       <Grid>
-      <Form {...form} className="contact__form presentation__center">
+      <Form {...form} className="contact__form presentation__center" >
         
         <Row xs={12} md={12} lg={12}>
           <FormLabel name="name">
@@ -78,7 +58,7 @@ const ContactForm = () => {
         </Row>
 
         <Row xs={12} md={12} lg={12}>
-          <FormMessage className="input__message" {...form} name="name" />
+          <FormMessage className="input__message" {...form} name="name"  role="alert" />
         </Row>
         
         <Row xs={12} md={12} lg={12}>
@@ -93,7 +73,7 @@ const ContactForm = () => {
         </Row>
 
         <Row xs={12} md={12} lg={12}>
-          <FormMessage className="input__message"{...form} name="email" />
+          <FormMessage className="input__message"{...form} name="email"  role="alert" />
         </Row>
         
 
@@ -116,7 +96,7 @@ const ContactForm = () => {
         
 
         <Row xs={12} md={12} lg={12} >
-          <FormMessage className="input__message"{...form} name="message" />
+          <FormMessage className="input__message"{...form} name="message"  role="alert" />
         </Row>
 
         <Row xs={12} md={12} lg={12} className="presentation__center">
